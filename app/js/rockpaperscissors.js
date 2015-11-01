@@ -35,12 +35,7 @@ function getComputerMove(move) {
     return /* Your Expression */;
 }
 
-function getWinner(playerMove,computerMove) {
-    var winner;
-    // Write code that will set winner to either 'player', 'computer', or 'tie' based on the values of playerMove and computerMove.
-    // Assume that the only values playerMove and computerMove can have are 'rock', 'paper', and 'scissors'.
-    // The rules of the game are that 'rock' beats 'scissors', 'scissors' beats 'paper', and 'paper' beats 'rock'.
-    /* var playerMove = prompt("Do you choose rock, paper or scissors? Please spell correctly or winner will not show.");
+var playerMove = prompt("Do you choose rock, paper or scissors? Please spell correctly or winner will not show.");
 var computerMove = Math.random();
 
 if (computerMove < 0.34)
@@ -94,8 +89,6 @@ else if(choice1 === "scissors")
 };
 
 getWinner(playerMove, computerMove); */
-    return winner;
-}
 
 function playToFive() {
     console.log("Let's play Rock, Paper, Scissors");
