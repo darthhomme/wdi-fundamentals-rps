@@ -21,19 +21,8 @@ function randomPlay() {
 /*           Write Your Code Below            */
 ////////////////////////////////////////////////
 
-function getPlayerMove(move) {
-    // Write an expression that operates on a variable called `move`
-    // If a `move` has a value, your expression should evaluate to that value.
-    // However, if `move` is not specified / is null, your expression should equal `getInput()`.
-    return /* Your Expression */;
-}
 
-function getComputerMove(move) {
-    // Write an expression that operates on a variable called `move`
-    // If a `move` has a value, your expression should evaluate to that value.
-    // However, if `move` is not specified / is null, your expression should equal `randomPlay()`.
-    return /* Your Expression */;
-}
+
 
 var playerMove = prompt("Do you choose rock, paper or scissors? Please spell correctly or winner will not show.");
 var computerMove = Math.random();
@@ -88,14 +77,25 @@ else if(choice1 === "scissors")
     }
 };
 
-getWinner(playerMove, computerMove); */
+getWinner(playerMove, computerMove);
+
 
 function playToFive() {
-    console.log("Let's play Rock, Paper, Scissors");
+    console.log('Let\'s play Rock Paper Scissors');
     var playerWins = 0;
     var computerWins = 0;
-    // Write code that plays 'Rock, Paper, Scissors' until either the player or the computer has won five times.
-    /* YOUR CODE HERE */
-    return [playerWins, computerWins];
+
+    while (playerWins === 5 || computerWins === 5) {
+        if (humanVsMachine === 'player') {
+        playerWins += 1;
+        } else if (humanVsMachine === 'computer') {
+        computerWins += 1;
+        }
+    // return [playerWins, computerWins]; moving code to below
+    }
+    return [playerWins, computerWins]; // moved return outside the loop here
 }
+
+console.log(playToFive());
+
 
